@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#007D00"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageField"
+        android:layout_width="380dp"
+        android:layout_height="590dp"
+        android:background="@drawable/shape_1"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/field" />
+
+    <ImageView
+        android:id="@+id/imageBall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageField"
+        app:layout_constraintEnd_toEndOf="@+id/imageField"
+        app:layout_constraintStart_toStartOf="@+id/imageField"
+        app:layout_constraintTop_toTopOf="@+id/imageField"
+        app:srcCompat="@drawable/ball" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
